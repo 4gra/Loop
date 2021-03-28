@@ -291,6 +291,8 @@ extension LoopSettings: RawRepresentable {
         if let rawThreshold = rawValue["minimumBGGuard"] as? GlucoseThreshold.RawValue {
             self.suspendThreshold = GlucoseThreshold(rawValue: rawThreshold)
         }
+        // Uncomment this on a single build to work around the problem setting threshold on a move to dev
+        // self.suspendThreshold = nil
         
         if let rawDosingStrategy = rawValue["dosingStrategy"] as? DosingStrategy.RawValue,
             let dosingStrategy = DosingStrategy(rawValue: rawDosingStrategy) {
