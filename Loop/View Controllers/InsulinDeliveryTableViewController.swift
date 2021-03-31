@@ -614,7 +614,7 @@ extension DoseEntry {
 
             return createAttributedDescription(from: description, with: font)
         case .basal, .tempBasal:
-            let description = String(format: NSLocalizedString("%1$@: <b>%2$@</b> %3$@", comment: "Description of a basal temp basal dose entry (1: title for dose type, 2: value (? if no value) in bold, 3: unit)"), type.localizedDescription, numberFormatter.string(from: unitsPerHour) ?? "?", DoseEntry.unitsPerHour.shortLocalizedUnitString())
+            let description = String(format: NSLocalizedString("%1$@: <b>%2$@</b> %3$@", comment: "Description of a basal temp basal dose entry (1: title for dose type, 2: value (? if no value) in bold, 3: unit)"), type.localizedDescription, numberFormatter.string(from: unitsPerHour) ?? "?", DoseEntry.unitsPerHour.shortLocalizedUnitString(avoidLineBreaking: false)) // bad hack to prevent encoding issues due to NBSP
             return createAttributedDescription(from: description, with: font)
         case .suspend, .resume:
             let attributes: [NSAttributedString.Key: Any] = [
