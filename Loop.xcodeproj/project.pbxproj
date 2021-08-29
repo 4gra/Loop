@@ -1147,11 +1147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D9002F21EB234400AF44BF /* LoopCore.framework in Frameworks */,
+				4344628620A7A3BE00C4BE6F /* CGMBLEKit.framework in Frameworks */,
 				C1E2773E224177C000354103 /* ClockKit.framework in Frameworks */,
 				4344628220A7A37F00C4BE6F /* CoreBluetooth.framework in Frameworks */,
 				4344628520A7A3BE00C4BE6F /* LoopKit.framework in Frameworks */,
 				4396BD50225159C0005AA4D3 /* HealthKit.framework in Frameworks */,
-				4344628620A7A3BE00C4BE6F /* CGMBLEKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
