@@ -10,14 +10,16 @@ import CGMBLEKit
 import G4ShareSpy
 import ShareClient
 import MockKit
+import xDripClient
 
 
 let allCGMManagers: [CGMManager.Type] = [
     G6CGMManager.self,
-    G5CGMManager.self,
-    G4CGMManager.self,
+//    G5CGMManager.self,
+//    G4CGMManager.self,
     ShareClientManager.self,
     MockCGMManager.self,
+    xDripClientManager.self,
 ]
 
 
